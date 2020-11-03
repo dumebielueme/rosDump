@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="ros_test_assembly">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.25 0.0249831852972346 -0.445"
+        rpy="0 0 0" />
+      <mass
+        value="22.7777875658031" />
+      <inertia
+        ixx="1.53624657736055"
+        ixy="5.64314745403623E-19"
+        ixz="7.11507675693612E-17"
+        iyy="2.04388054287898"
+        iyz="7.24588315938943E-18"
+        izz="0.517010899353609" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ros_test_assembly/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ros_test_assembly/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="FR_wheel">
+    <inertial>
+      <origin
+        xyz="-5.55111512312578E-17 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.402123859659494" />
+      <inertia
+        ixx="0.00045574037428076"
+        ixy="-7.67877008722872E-38"
+        ixz="-1.17549435082229E-36"
+        iyy="0.00045574037428076"
+        iyz="-1.16563729924132E-36"
+        izz="0.000804247719318988" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ros_test_assembly/meshes/FR_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ros_test_assembly/meshes/FR_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FR_wheel_contd"
+    type="continuous">
+    <origin
+      xyz="-0.585 0.024274 -0.1"
+      rpy="3.1416 -1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="FR_wheel" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      upper="1000"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="FL_wheel">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.402123859659493" />
+      <inertia
+        ixx="0.000455740374280759"
+        ixy="-7.67877008722871E-38"
+        ixz="9.25180260739775E-37"
+        iyy="0.000455740374280759"
+        iyz="-1.16563729924132E-36"
+        izz="0.000804247719318987" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ros_test_assembly/meshes/FL_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ros_test_assembly/meshes/FL_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FL_wheel_cont"
+    type="continuous">
+    <origin
+      xyz="0.085 0.024274 -0.1"
+      rpy="3.1416 -1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="FL_wheel" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      upper="1000"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RR_wheel">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.402123859659494" />
+      <inertia
+        ixx="0.00045574037428076"
+        ixy="-7.67877008722872E-38"
+        ixz="-1.17549435082229E-36"
+        iyy="0.00045574037428076"
+        iyz="-1.16563729924132E-36"
+        izz="0.000804247719318988" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ros_test_assembly/meshes/RR_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ros_test_assembly/meshes/RR_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RR_wheel_contd"
+    type="continuous">
+    <origin
+      xyz="-0.585 0.024274 -0.79"
+      rpy="3.1416 -1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="RR_wheel" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      upper="1000"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RL_wheel">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.402123859659493" />
+      <inertia
+        ixx="0.000455740374280759"
+        ixy="-7.67877008722871E-38"
+        ixz="9.25180260739775E-37"
+        iyy="0.000455740374280759"
+        iyz="-1.16563729924132E-36"
+        izz="0.000804247719318987" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ros_test_assembly/meshes/RL_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ros_test_assembly/meshes/RL_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RF_wheel_contd"
+    type="continuous">
+    <origin
+      xyz="0.085 0.024274 -0.79"
+      rpy="3.1416 -1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="RL_wheel" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      upper="1000"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
